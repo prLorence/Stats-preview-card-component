@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 :root {
   --color-very-dark-blue: hsl(233, 47%, 7%);
   --color-dark-desaturated-blue: hsl(244, 38%, 16%);
@@ -26,11 +28,7 @@ body {
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Lexend Deca';
-  src: url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-  font-weight: normal;
-}
+
 
 .container {
   text-align: center;
@@ -39,6 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 3em 1em 3em 1em;
+  
 }
 
 /* Header */
@@ -62,6 +61,8 @@ header {
   background-color: var(--color-dark-desaturated-blue);
   width: 99vw;
   max-width: 300px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .violet {
@@ -71,18 +72,58 @@ header {
 
 .title {
   font-family: 'Inter';
-  padding: .7em 1em;
+  padding: .2em 1em;
   margin-bottom: 0;
   font-size: 1.7rem;
 }
 
-article > p {
-  font-family: 'Lexend Deca';
-}
-
 .article-content {
-
+  font-family: 'Inter';
+  margin-top: 0;
+  padding: 0 1.8em;
+  font-size: 1rem;
+  font-weight: 200;
 }
+
+/* Statistics */
+
+.bold {
+  font-weight: bolder;
+  font-size: 1.7em;
+  margin-bottom: .3em;
+}
+
+.normal {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 2em;
+}
+
+.stats-list p {
+  font-family: 'Inter';
+  display: flex;
+  flex-direction: column;
+  padding: .3em;
+  text-transform: uppercase;
+} 
+
+.stat-items-normal {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+
 
 
 /* footer and attribution */
