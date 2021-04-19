@@ -15,6 +15,8 @@
 body {
   width: 99vw;
   max-width: 375px;
+  background: var(--color-very-dark-blue);
+  color: var(--color-white);
 }
 
 @font-face {
@@ -26,7 +28,69 @@ body {
 
 @font-face {
   font-family: 'Lexend Deca';
-  src: url('https://fonts.google.com/specimen/Lexend+Deca');
-  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+  font-weight: normal;
 }
 
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3em 1em 3em 1em;
+}
+
+/* Header */
+
+header {
+  margin-bottom: 0;
+}
+
+.header-image {
+  width: 99vw;
+  max-width: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+/* Main-content */
+
+.main-content {
+  margin-top: 0;
+  background-color: var(--color-dark-desaturated-blue);
+  width: 99vw;
+  max-width: 300px;
+}
+
+.violet {
+  color: var(--color-soft-violet);
+  opacity: .99;
+}
+
+.title {
+  font-family: 'Inter';
+  padding: .7em 1em;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+
+article > p {
+  font-family: 'Lexend Deca';
+}
+
+.article-content {
+
+}
+
+
+/* footer and attribution */
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
